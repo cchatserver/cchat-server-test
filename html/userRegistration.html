@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration and User Confirmation</title>
+  
+  </head>
+<body>
+  
+ 
+  <div>
+    <h3>User registration:</h3>
+    <form id="formUser">
+      Username: <input id="username" type="text" name="username">
+      <br>
+      Password: <input id="password" type="text" name="password">
+      <br>
+      Code country: <input id="codeCountry" type="text" name="codeCountry">
+      <br>
+      Phone number: <input id="phone" type="number" name="phone">
+      <br>
+      <input type="submit" value="Submit">      
+    </form>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+
+  <div>
+    <h3>User confirmation:</h3>
+    <form id="formConfirmation">
+      Phone number: <input id="phoneConfirmation" type="number" name="phone">
+      <br>
+      Code Confirmation: <input id="codeConfirmation" type="text" name="codeCountry">
+      <br>
+      <input type="submit" value="Submit">      
+    </form>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <div>
+    <h3>Verify Contacts:</h3>
+    <form id="formVerifyContacts">
+      Phone number: <input id="phoneVerifyContacts" type="text" name="phoneVerifyContacts">
+      <br>
+      <input type="submit" value="Submit">      
+    </form>    
+  </div>
+
+  <div id="contacts"></div>
+
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
